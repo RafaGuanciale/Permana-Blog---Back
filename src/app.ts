@@ -7,7 +7,12 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:3001", "https://permana-blog-front.vercel.app"],
+    origin: [
+      "http://localhost:3001",
+      "https://permana-blog-front.vercel.app",
+      "https://www.permana.com.br",
+      "https://permana.com.br",
+    ],
   }),
 );
 
